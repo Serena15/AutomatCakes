@@ -16,7 +16,7 @@ namespace AutomatCakes
 
             Customer I = new Customer(Console.ReadLine());
 
-            Cakes.Menu(I);
+            Cakes.Menu(I, I.getName());
         }
     }
 }
