@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace AutomatCakes
 {
-    class Purse
+    class Purse // кошелек покупателя
     {
 
-        private int balance;
+        private int balance; // сумма,которая содержиться в кошельке
 
-        public Purse()
+        public Purse() //конструктор класса Purse
         {
             this.balance = 150;
         }
 
-        public int getBalance()
+        public int getBalance() //узнать баланс кошелька
         {
             return balance;
         }
 
-        public void setBalance(int money, int sign)
+        public void setBalance(int money, int sign) // изменить баланс кошелька
         {
             if (sign == -1)
                 balance -= money;
